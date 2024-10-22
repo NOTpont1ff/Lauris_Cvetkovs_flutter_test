@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SearchScreen(), 
+      home: SearchScreen(), // Set SearchScreen as the home screen
     );
   }
 }
