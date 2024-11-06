@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
 import '../models/gif_model.dart';
 import '../services/giphy_api.dart';
-import 'detail_screen.dart'; 
+import 'detail_screen.dart';
 
 class SearchScreen extends StatefulWidget {
   @override
@@ -13,9 +13,6 @@ class _SearchScreenState extends State<SearchScreen> {
   final TextEditingController _searchController = TextEditingController();
   final PagingController<int, GifModel> _pagingController =
       PagingController(firstPageKey: 1);
-
-
-
 
   @override
   void initState() {
@@ -49,12 +46,6 @@ class _SearchScreenState extends State<SearchScreen> {
       _pagingController.error = error;
     }
   }
-
-
-
-
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -117,6 +108,4 @@ class _SearchScreenState extends State<SearchScreen> {
       ),
     );
   }
-
-
 }

@@ -13,9 +13,10 @@ class GifModel {
 
   factory GifModel.fromJson(Map<String, dynamic> json) {
     return GifModel(
-      id: json['id'], 
+      id: json['id'],
       title: json['title'],
-      url: json['images']['fixed_height']['url'], 
-      user: json['username'] ?? 'Unknown', );
+      url: json['images']['fixed_height']['url'],
+      user: json['username'] ?? 'Unknown',
+    );
   }
 }

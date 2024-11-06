@@ -1,11 +1,9 @@
-import 'package:flutter/material.dart'; 
-import 'package:flutter_application_1/models/gif_model.dart'; 
-
+import 'package:flutter/material.dart';
+import 'package:flutter_application_1/models/gif_model.dart';
 
 class DetailScreen extends StatelessWidget {
-  final GifModel gif; 
+  final GifModel gif;
 
-  
   DetailScreen({required this.gif});
 
   @override
@@ -19,14 +17,14 @@ class DetailScreen extends StatelessWidget {
         children: [
           Expanded(
             child: Center(
-              child: Image.network(gif.url), 
+              child: Image.network(gif.url),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(8.0), 
+            padding: const EdgeInsets.all(8.0),
             child: Text(
-              'Uploaded by: ${gif.user}', 
-              style: TextStyle(fontSize: 16), 
+              'Uploaded by: ${gif.user}',
+              style: TextStyle(fontSize: 16),
             ),
           ),
         ],
